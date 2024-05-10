@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-slate-100">
+    <main
+      class="container mx-auto flex flex-col justify-center items-strart w-full h-screen">
+      <h1 class="text-3xl font-bold mb-5">Wetter-App</h1>
+
+      <!-- Input Area -->
+      <section id="InputContainer" class="flex justify-stretch">
+        <input
+          id="CityInput"
+          class="w-full border-[1.5px] rounded-l p-3"
+          type="text"
+          placeholder="Gib eine Stadt ein" />
+        <button
+          id="SubmitBtn"
+          class="bg-blue-500 hover:bg-black hover:transition-all text-white text-sm font-bold px-5 ml-2 rounded-r"
+          onclick="fetchWeatherInfo()">
+          Wetter abrufen
+        </button>
+      </section>
+
+      <!-- Weather Data -->
+      <section
+        id="WeatherContainer"
+        class="grid md:grid-cols-2 grid-cols-1 gap-5 mt-5"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

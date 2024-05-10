@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.weather-card {
+  @apply relative bg-white p-3 rounded shadow-md;
+}
+
+.weather-card h2 {
+  @apply text-lg font-bold mb-2;
+}
+
+.weather-card p {
+  @apply text-gray-600;
+}
+
+.weather-card p.temp {
+  @apply font-bold;
+}
+
+.weather-card p.cond {
+  @apply text-sm;
+}
+
+.icon {
+  @apply absolute inset-y-5 right-5 w-16 h-16;
+}
